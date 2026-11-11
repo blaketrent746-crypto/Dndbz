@@ -1,0 +1,1720 @@
+{
+  "type": "RPGSystem",
+  "id": "ddbz5e",
+  "name": "Dungeons and DragonballZ V.3",
+  "abbreviation": "DDBZ",
+  "version": "3.0.0",
+  "min_app_version": null,
+  "character_display_name": "name",
+  "live_session_enabled": false,
+  "dice": [
+    {
+      "type": "RPGDice",
+      "id": "d4",
+      "sides": 4
+    },
+    {
+      "type": "RPGDice",
+      "id": "d6",
+      "sides": 6
+    },
+    {
+      "type": "RPGDice",
+      "id": "d8",
+      "sides": 8
+    },
+    {
+      "type": "RPGDice",
+      "id": "d10",
+      "sides": 10
+    },
+    {
+      "type": "RPGDice",
+      "id": "d12",
+      "sides": 12
+    },
+    {
+      "type": "RPGDice",
+      "id": "d20",
+      "sides": 20
+    },
+    {
+      "type": "RPGDice",
+      "id": "d100",
+      "sides": 100
+    }
+  ],
+  "enumerated_types": [
+    {
+      "type": "EnumeratedType",
+      "id": "technique_category",
+      "name": "Technique Category",
+      "values": [
+        "Melee",
+        "Weapon",
+        "Ki - Beam",
+        "Ki - Blast",
+        "Ki - Barrage",
+        "Ki - Omni",
+        "Ki - Other",
+        "Stance"
+      ]
+    },
+    {
+      "type": "EnumeratedType",
+      "id": "form_type",
+      "name": "Form Type",
+      "values": [
+        "Transformation",
+        "Power-Up",
+        "Godly Transformation",
+        "Godly Power-Up"
+      ]
+    },
+    {
+      "type": "EnumeratedType",
+      "id": "race_group",
+      "name": "Race Category",
+      "values": [
+        "Humanoid",
+        "Alien",
+        "Optional",
+        "Subrace"
+      ]
+    }
+  ],
+  "character_stats": [
+    {
+      "type": "Stat",
+      "id": "name",
+      "name": "Character Name",
+      "stat_type": "string",
+      "base_value": "Z-Fighter"
+    },
+    {
+      "type": "Stat",
+      "id": "level",
+      "name": "Level",
+      "stat_type": "number",
+      "base_value": 1
+    },
+    {
+      "type": "Stat",
+      "id": "ki_rank",
+      "name": "Ki Rank",
+      "stat_type": "number",
+      "base_value": 1
+    },
+    {
+      "type": "Stat",
+      "id": "proficiency_bonus",
+      "name": "Proficiency Bonus",
+      "stat_type": "number",
+      "base_value": 3
+    },
+    {
+      "type": "Stat",
+      "id": "strength",
+      "name": "Strength",
+      "stat_type": "number",
+      "base_value": 10
+    },
+    {
+      "type": "Stat",
+      "id": "dexterity",
+      "name": "Dexterity",
+      "stat_type": "number",
+      "base_value": 10
+    },
+    {
+      "type": "Stat",
+      "id": "constitution",
+      "name": "Constitution",
+      "stat_type": "number",
+      "base_value": 10
+    },
+    {
+      "type": "Stat",
+      "id": "intelligence",
+      "name": "Intelligence",
+      "stat_type": "number",
+      "base_value": 10
+    },
+    {
+      "type": "Stat",
+      "id": "wisdom",
+      "name": "Wisdom",
+      "stat_type": "number",
+      "base_value": 10
+    },
+    {
+      "type": "Stat",
+      "id": "charisma",
+      "name": "Charisma",
+      "stat_type": "number",
+      "base_value": 10
+    },
+    {
+      "type": "Stat",
+      "id": "hp_max",
+      "name": "Max HP",
+      "stat_type": "number",
+      "base_value": 10
+    },
+    {
+      "type": "Stat",
+      "id": "hp_current",
+      "name": "Current HP",
+      "stat_type": "number",
+      "base_value": 10
+    },
+    {
+      "type": "Stat",
+      "id": "hp_temp",
+      "name": "Temporary HP",
+      "stat_type": "number",
+      "base_value": 0
+    },
+    {
+      "type": "Stat",
+      "id": "ki_max",
+      "name": "Max Ki",
+      "stat_type": "number",
+      "base_value": 10
+    },
+    {
+      "type": "Stat",
+      "id": "ki_current",
+      "name": "Current Ki",
+      "stat_type": "number",
+      "base_value": 10
+    },
+    {
+      "type": "Stat",
+      "id": "god_ki_max",
+      "name": "Max God Ki",
+      "stat_type": "number",
+      "base_value": 0
+    },
+    {
+      "type": "Stat",
+      "id": "god_ki_current",
+      "name": "Current God Ki",
+      "stat_type": "number",
+      "base_value": 0
+    },
+    {
+      "type": "Stat",
+      "id": "stamina_max",
+      "name": "Max Stamina",
+      "stat_type": "number",
+      "base_value": 2
+    },
+    {
+      "type": "Stat",
+      "id": "stamina_current",
+      "name": "Current Stamina",
+      "stat_type": "number",
+      "base_value": 2
+    },
+    {
+      "type": "Stat",
+      "id": "power_bonus",
+      "name": "Power Bonus",
+      "stat_type": "number",
+      "base_value": 0
+    },
+    {
+      "type": "Stat",
+      "id": "armor_class",
+      "name": "Armor Class",
+      "stat_type": "number",
+      "base_value": 12
+    },
+    {
+      "type": "Stat",
+      "id": "speed",
+      "name": "Speed (ft)",
+      "stat_type": "number",
+      "base_value": 30
+    },
+    {
+      "type": "Stat",
+      "id": "exhaustion",
+      "name": "Exhaustion (0-10)",
+      "stat_type": "number",
+      "base_value": 0
+    },
+    {
+      "type": "Stat",
+      "id": "zeni",
+      "name": "Zeni",
+      "stat_type": "number",
+      "base_value": 0
+    },
+    {
+      "type": "Stat",
+      "id": "training_boons",
+      "name": "Training Boons",
+      "stat_type": "number",
+      "base_value": 0
+    },
+    {
+      "type": "Stat",
+      "id": "time_points",
+      "name": "Time Points",
+      "stat_type": "number",
+      "base_value": 0
+    }
+  ],
+  "character_indexed_stats": [
+    "name",
+    "level",
+    "ki_rank"
+  ],
+  "character_sheet_sections": [
+    {
+      "type": "CharacterSheetSection",
+      "id": "core_combat",
+      "name": "Combat & Energy",
+      "views": [
+        {
+          "type": "stat",
+          "stat_id": "hp_current"
+        },
+        {
+          "type": "stat",
+          "stat_id": "hp_max"
+        },
+        {
+          "type": "stat",
+          "stat_id": "ki_current"
+        },
+        {
+          "type": "stat",
+          "stat_id": "ki_max"
+        },
+        {
+          "type": "stat",
+          "stat_id": "stamina_current"
+        },
+        {
+          "type": "stat",
+          "stat_id": "stamina_max"
+        },
+        {
+          "type": "stat",
+          "stat_id": "god_ki_current"
+        },
+        {
+          "type": "stat",
+          "stat_id": "power_bonus"
+        },
+        {
+          "type": "stat",
+          "stat_id": "armor_class"
+        },
+        {
+          "type": "stat",
+          "stat_id": "speed"
+        },
+        {
+          "type": "stat",
+          "stat_id": "exhaustion"
+        }
+      ]
+    },
+    {
+      "type": "CharacterSheetSection",
+      "id": "ability_scores",
+      "name": "Ability Scores",
+      "views": [
+        {
+          "type": "stat",
+          "stat_id": "strength"
+        },
+        {
+          "type": "stat",
+          "stat_id": "dexterity"
+        },
+        {
+          "type": "stat",
+          "stat_id": "constitution"
+        },
+        {
+          "type": "stat",
+          "stat_id": "intelligence"
+        },
+        {
+          "type": "stat",
+          "stat_id": "wisdom"
+        },
+        {
+          "type": "stat",
+          "stat_id": "charisma"
+        }
+      ]
+    },
+    {
+      "type": "CharacterSheetSection",
+      "id": "progression_resources",
+      "name": "Progression & Resources",
+      "views": [
+        {
+          "type": "stat",
+          "stat_id": "level"
+        },
+        {
+          "type": "stat",
+          "stat_id": "ki_rank"
+        },
+        {
+          "type": "stat",
+          "stat_id": "proficiency_bonus"
+        },
+        {
+          "type": "stat",
+          "stat_id": "training_boons"
+        },
+        {
+          "type": "stat",
+          "stat_id": "time_points"
+        },
+        {
+          "type": "stat",
+          "stat_id": "zeni"
+        }
+      ]
+    }
+  ],
+  "character_search_item_view": {
+    "type": "text",
+    "stat_id": "name"
+  },
+  "character_creation_flow": [
+    {
+      "type": "CharacterCreationPage",
+      "id": "basics",
+      "name": "Identity & Ability Scores",
+      "views": [
+        {
+          "type": "stat",
+          "stat_id": "name"
+        },
+        {
+          "type": "stat",
+          "stat_id": "strength"
+        },
+        {
+          "type": "stat",
+          "stat_id": "dexterity"
+        },
+        {
+          "type": "stat",
+          "stat_id": "constitution"
+        },
+        {
+          "type": "stat",
+          "stat_id": "intelligence"
+        },
+        {
+          "type": "stat",
+          "stat_id": "wisdom"
+        },
+        {
+          "type": "stat",
+          "stat_id": "charisma"
+        }
+      ]
+    }
+  ],
+  "progression_systems": [],
+  "mechanics": [],
+  "resources": [
+    {
+      "type": "Resource",
+      "id": "race",
+      "name": "Race",
+      "plural_name": "Races",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "string"
+        },
+        {
+          "id": "category",
+          "name": "Category",
+          "type": "string"
+        },
+        {
+          "id": "asi",
+          "name": "Ability Score Increase",
+          "type": "string"
+        },
+        {
+          "id": "speed",
+          "name": "Speed",
+          "type": "string"
+        },
+        {
+          "id": "languages",
+          "name": "Languages",
+          "type": "string"
+        },
+        {
+          "id": "skills",
+          "name": "Skills",
+          "type": "string"
+        },
+        {
+          "id": "description",
+          "name": "Description & Features",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "Resource",
+      "id": "class",
+      "name": "Class",
+      "plural_name": "Classes",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "string"
+        },
+        {
+          "id": "hit_die",
+          "name": "Hit Die",
+          "type": "string"
+        },
+        {
+          "id": "ki_modifier",
+          "name": "Ki Modifier",
+          "type": "string"
+        },
+        {
+          "id": "saving_throws",
+          "name": "Saving Throws",
+          "type": "string"
+        },
+        {
+          "id": "proficiencies",
+          "name": "Proficiencies",
+          "type": "string"
+        },
+        {
+          "id": "description",
+          "name": "Class Features",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "Resource",
+      "id": "technique",
+      "name": "Technique",
+      "plural_name": "Techniques",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "string"
+        },
+        {
+          "id": "category",
+          "name": "Category",
+          "type": "string"
+        },
+        {
+          "id": "rank",
+          "name": "Rank",
+          "type": "number"
+        },
+        {
+          "id": "cost",
+          "name": "Ki / HP Cost",
+          "type": "string"
+        },
+        {
+          "id": "casting_time",
+          "name": "Casting Time",
+          "type": "string"
+        },
+        {
+          "id": "range",
+          "name": "Range",
+          "type": "string"
+        },
+        {
+          "id": "duration",
+          "name": "Duration",
+          "type": "string"
+        },
+        {
+          "id": "chargeable",
+          "name": "Chargeable",
+          "type": "string"
+        },
+        {
+          "id": "prerequisites",
+          "name": "Prerequisites",
+          "type": "string"
+        },
+        {
+          "id": "description",
+          "name": "Effect",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "Resource",
+      "id": "form",
+      "name": "Form",
+      "plural_name": "Forms",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "string"
+        },
+        {
+          "id": "family",
+          "name": "Family / Race",
+          "type": "string"
+        },
+        {
+          "id": "form_type",
+          "name": "Form Type",
+          "type": "string"
+        },
+        {
+          "id": "upkeep",
+          "name": "Stamina / HP Cost",
+          "type": "string"
+        },
+        {
+          "id": "description",
+          "name": "Bonuses & Effects",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "Resource",
+      "id": "feat",
+      "name": "Feat",
+      "plural_name": "Feats",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "string"
+        },
+        {
+          "id": "category",
+          "name": "Category",
+          "type": "string"
+        },
+        {
+          "id": "prerequisites",
+          "name": "Prerequisites",
+          "type": "string"
+        },
+        {
+          "id": "description",
+          "name": "Benefits",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "Resource",
+      "id": "heroic_feature",
+      "name": "Heroic Feature",
+      "plural_name": "Heroic Features",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "string"
+        },
+        {
+          "id": "description",
+          "name": "Effect",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "Resource",
+      "id": "trained_feature",
+      "name": "Trained Feature",
+      "plural_name": "Trained Features",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "string"
+        },
+        {
+          "id": "discipline",
+          "name": "Discipline",
+          "type": "string"
+        },
+        {
+          "id": "description",
+          "name": "Effect",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "type": "Resource",
+      "id": "equipment",
+      "name": "Equipment",
+      "plural_name": "Equipment",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "string"
+        },
+        {
+          "id": "category",
+          "name": "Category",
+          "type": "string"
+        },
+        {
+          "id": "cost",
+          "name": "Cost (Zeni)",
+          "type": "string"
+        },
+        {
+          "id": "stats",
+          "name": "Stats / Damage / AC",
+          "type": "string"
+        },
+        {
+          "id": "properties",
+          "name": "Properties & Description",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "ddbz_compendium": {
+    "system_rules": {
+      "stamina": "At level 1, Stamina = 1 + Con mod (+1 per level). Regain half on short rest, full on long rest. 1 Stamina = +10 ft speed or +1 extra attack (max Prof Bonus). Maneuvers: Block (3 Stam), Clash (2 Stam), Counter (5 Stam), Deflection (1-Lvl Stam), Power Hit & Follow Up (2 Stam), Power Strike (1+ Stam), Wild Sense (3 Stam), Burst Attack (half upkeep Stam), Interception (3 Stam).",
+      "ki": "Ki gained per level = Con mod + Wis mod + Class Ki Modifier. Refill half on short rest, full on long rest. 0 Ki = Ki Exhaustion (cannot fly, use Ki techniques, transform, concentrate on Ki techniques, and lose Prof Bonus to AC). Basic Ki Blast: Action, 30/90 ft, Dex ranged attack, 1d4 + Dex ki damage.",
+      "god_ki": "Obtained at level 20, unlocking a Godly Transformation, or meditating for 1 Action to convert 200 Ki into 1 God Ki (max 3). Increases Ability Score Maximum by 2. Uses: replace 200 Ki (ignores resistance, immunity becomes resistance, +1 damage per 5 excess Ki), end 1 condition, declare hit before roll, declare crit before roll (3x on natural crit), regain 15 Stamina, or auto-pass a save/skill check.",
+      "ki_rank": "Rank 1 (Lvl 1), Rank 2 (Lvl 5), Rank 3 (Lvl 10), Rank 4 (Lvl 15).",
+      "power_and_overload": "Each +1 Power gives +1 attack rolls, technique/maneuver Save DCs, and Spirit checks, and -1 Ki Stealth/Control. Every +2 Power gives +1 AC and +1 saving throws. Overload threshold = Prof Bonus + God Ki. Exceeding threshold at start of turn: +1 over ends all Forms & Stunned; +2: 1d4 Destruction; +3: 1d6; +4: 1d8; +5: 1d10; +6: 1d12; +7+: +1d6 per point.",
+      "proficiency_progression": "Lvl 1-3: +3 | Lvl 4-6: +4 | Lvl 7-9: +5 | Lvl 10-12: +6 | Lvl 13-15: +7 | Lvl 16-18: +8 | Lvl 19-20: +9.",
+      "new_skills": [
+        "Spirit (Wis)",
+        "Ki Control (Wis)",
+        "Technology (Int)"
+      ],
+      "conditions": {
+        "Empowered": "Advantage on Str checks/saves; +1d4 damage on Melee attacks, Melee Techniques, and Melee Weapon Techniques; count as 1 size larger for carrying/push/drag/lift.",
+        "Super-Charged": "Advantage on Spirit checks and Clashes; +1d4 damage on Basic Ki Attacks and Ki Techniques.",
+        "Bulk": "+1 Strength and -1 Dexterity per stage.",
+        "Full Bodied Spirit": "Double max Stamina and HP in Other-World, halved in Land of the Living. Death destroys soul (requires Super Dragon Balls).",
+        "Exhaustion": "10-level cumulative effect: -1 to all d20 checks per level; death at -10.",
+        "Enraged": "Cannot concentrate, can cast spells/techniques. Lasts until end of next turn: +2 Power, +10 ft speed, +1 AC, +5 Temp Stamina.",
+        "Berserk": "Must attack nearest creature each round; disadvantage on Wis checks/saves; auto-fail Int checks/saves; immune to charmed/frightened; also Enraged.",
+        "Heavy Weight": "Per rank: -1 Str, -1 Dex, -5 ft speed, -1 Power.",
+        "Light Weight": "Per rank: +1 Str, +1 Dex, +5 ft speed, +1 Power."
+      }
+    },
+    "races": [
+      {
+        "name": "Beastmen",
+        "category": "Humanoid",
+        "asi": "+1 to all OR +1 to 3 and 1 Feat",
+        "speed": "35 ft",
+        "languages": "Common + 1",
+        "skills": "Nature, Survival",
+        "features": [
+          "Animal Reflexes",
+          "Evolutionary Tactics",
+          "Animal Nature",
+          "Predator or Prey",
+          "Animal Biology (Mammalian/Fish/Avian)"
+        ]
+      },
+      {
+        "name": "Ceralians",
+        "category": "Humanoid",
+        "asi": "Wis +2, Str -1, and Int +2 or Dex +2",
+        "speed": "30 ft",
+        "languages": "Common, Ceralian",
+        "skills": "Perception, Technology",
+        "features": [
+          "Ceralian Focus",
+          "Tenacity",
+          "Sharpshooter",
+          "Red Eyes Of The Ceralian",
+          "Hyper Reflexes (2 reactions)"
+        ]
+      },
+      {
+        "name": "Earthling",
+        "category": "Humanoid",
+        "asi": "+1 to all OR +1 to 3 and 1 Feat",
+        "speed": "30 ft",
+        "languages": "Common + 1",
+        "skills": "Any 2",
+        "features": [
+          "Natural Talent (Lvl 1 ASI)",
+          "Hard Work",
+          "Earthling Spirit (+2 max to 1 score, 4 ASI pts)",
+          "Master of Many",
+          "Power-Up Proficiency (2nd Power-Up slot)"
+        ]
+      },
+      {
+        "name": "Konatsian",
+        "category": "Humanoid",
+        "asi": "+1 to all OR +1 to 3 and 1 Feat",
+        "speed": "30 ft",
+        "languages": "Common + 1",
+        "skills": "Athletics, Arcana",
+        "features": [
+          "Space Knights",
+          "Magical Upbringing",
+          "Magic Blood",
+          "Superiority: Weapon",
+          "Heroic Nature"
+        ]
+      },
+      {
+        "name": "Mashin-jin",
+        "category": "Humanoid",
+        "asi": "Wis +3, Con +1, Str -1",
+        "speed": "30 ft",
+        "languages": "Common, Infernal + 1",
+        "skills": "Intimidation, Arcana",
+        "features": [
+          "Corrupted Blood of the Shin-jins",
+          "Infernal Legacy",
+          "Demonic Energy (Fiend/Kai tag)",
+          "Demonic Bloodline",
+          "Energy of the Demon Realm"
+        ]
+      },
+      {
+        "name": "Ogre",
+        "category": "Humanoid",
+        "asi": "Con +2, Str +2, Cha -1",
+        "speed": "30 ft",
+        "languages": "Common, Infernal",
+        "skills": "Survival, Intimidation",
+        "features": [
+          "Muscular Durability",
+          "Ogre Stamina",
+          "Ogre's Endurance",
+          "Superiority: Unarmed",
+          "Powerful Build",
+          "Battle Cry"
+        ]
+      },
+      {
+        "name": "Saiyans",
+        "category": "Humanoid",
+        "asi": "Con +2, Int -1, and Str +2 or Dex +2",
+        "speed": "30 ft",
+        "languages": "Common, Sadalan",
+        "skills": "Athletics, Acrobatics",
+        "features": [
+          "Saiyan Instincts",
+          "Superiority: Combat",
+          "Zenkai Boost",
+          "Super Saiyan",
+          "Saiyan Genetics (Universe 7 / Universe 6 / Mutant / Ancient)"
+        ]
+      },
+      {
+        "name": "Shinling",
+        "category": "Humanoid",
+        "asi": "Wis +2, Int +1, Str -1",
+        "speed": "30 ft",
+        "languages": "Common, Celestial + 1",
+        "skills": "Insight, Religion",
+        "features": [
+          "Blood of the Shin-jins",
+          "Divine Legacy",
+          "Angelic Energy (Celestial/Kai tag)",
+          "Divine Talent (Kaio-Ken)",
+          "Energy of the Divine Realm"
+        ]
+      },
+      {
+        "name": "Alien",
+        "category": "Alien",
+        "asi": "Any two +2, any one -1",
+        "speed": "30 ft",
+        "languages": "Common + 1",
+        "skills": "Any 2",
+        "features": [
+          "Xeno Resistances",
+          "Alien Ability",
+          "Alien Skill",
+          "Maximum Power",
+          "Alien Battle Instincts"
+        ]
+      },
+      {
+        "name": "Android",
+        "category": "Alien",
+        "asi": "Any two +2, lower two -1 OR one -2",
+        "speed": "30 ft",
+        "languages": "Common + 1",
+        "skills": "Technology, History",
+        "features": [
+          "Battery Powered (4 Ki/round regen)",
+          "Computer Eyes",
+          "Diagnostics and Soft Reset",
+          "Modular Stamina Engine (+1 Stam/round)",
+          "Robotic Body & Arm Missile"
+        ]
+      },
+      {
+        "name": "Arcosian",
+        "category": "Alien",
+        "asi": "Str +2, Int +2, Wis -1",
+        "speed": "40 ft",
+        "languages": "Common, Cold",
+        "skills": "Persuasion, Deception",
+        "features": [
+          "Alien Resilience",
+          "Cunning",
+          "Natural Armor",
+          "Frozen Fury",
+          "Gates of Power"
+        ]
+      },
+      {
+        "name": "Chronin",
+        "category": "Alien",
+        "asi": "Wis +2, Dex +2, Con -1",
+        "speed": "30 ft",
+        "languages": "Common + 1",
+        "skills": "Any 2",
+        "features": [
+          "Blood of Time (Chronal Manipulation)",
+          "High-Speed Reactions",
+          "Adaptability",
+          "Nomadic Tendencies",
+          "Millennial Learning Curve"
+        ]
+      },
+      {
+        "name": "Greys",
+        "category": "Alien",
+        "asi": "Con +2, Str +2, Cha -1",
+        "speed": "30 ft",
+        "languages": "Common + 1",
+        "skills": "Ki Control, Athletics",
+        "features": [
+          "Raw Talent (+4 max to 1 score)",
+          "Combative Nature",
+          "Maximum Power",
+          "Destructive Strikes",
+          "Meditative State"
+        ]
+      },
+      {
+        "name": "Majin",
+        "category": "Alien",
+        "asi": "Con +3, Dex +1, Wis -1",
+        "speed": "30 ft",
+        "languages": "Common + 2",
+        "skills": "Arcana, Survival",
+        "features": [
+          "Form Fit",
+          "Magical Stretch",
+          "Magical Nature",
+          "Majin Regenerate",
+          "Majin Absorption & Candy Beam"
+        ]
+      },
+      {
+        "name": "Namekian",
+        "category": "Alien",
+        "asi": "Con +1, Dex +1, Wis +2, Cha -1",
+        "speed": "30 ft",
+        "languages": "Common, Namekian",
+        "skills": "Arcana, Insight",
+        "features": [
+          "Namekian Biology (Stretch reach)",
+          "Telepathy",
+          "Namekian Fusion",
+          "True Namekian Split",
+          "Namekian Clan (Warrior / Dragon / Demon)"
+        ]
+      },
+      {
+        "name": "Sateery",
+        "category": "Alien",
+        "asi": "Wis +2, Cha +2, Str -1",
+        "speed": "30 ft",
+        "languages": "Common + 1",
+        "skills": "Nature, Arcana",
+        "features": [
+          "Magical Nature",
+          "Energy Thief",
+          "Maximum Power",
+          "Magical Weakness",
+          "Absorptive Biology"
+        ]
+      },
+      {
+        "name": "Sekhmen-jin",
+        "category": "Alien",
+        "asi": "Dex +2, Str +2, Con -1",
+        "speed": "30 ft",
+        "languages": "Common + 1",
+        "skills": "Survival, Acrobatics",
+        "features": [
+          "9 Lives",
+          "Predatory Combat",
+          "Burning Soul",
+          "Predatory Rage",
+          "Cat Nap"
+        ]
+      },
+      {
+        "name": "Yardratian",
+        "category": "Alien",
+        "asi": "Wis +2, Int +2, Con -1",
+        "speed": "30 ft",
+        "languages": "Common + 1",
+        "skills": "Ki Control, History",
+        "features": [
+          "Superiority: Ki Attack",
+          "Rigorous Discipline",
+          "Spirit Control",
+          "Powerful Energy",
+          "Masters of Spirit"
+        ]
+      },
+      {
+        "name": "Bio-Android (Optional)",
+        "category": "Optional",
+        "asi": "Designated by Genetic Makeup",
+        "speed": "30 ft",
+        "languages": "Common + Genetic Makeup",
+        "skills": "Any 2",
+        "features": [
+          "Unique Physiology",
+          "Biotic Blueprint (Incomplete Creation / Artificial Warrior)",
+          "16 Genetic Makeup Features"
+        ]
+      }
+    ],
+    "subraces": [
+      {
+        "name": "Speedster",
+        "features": [
+          "Like the Wind",
+          "Quicker than the rest (2x base speed, BA Dash, wall/water run)",
+          "Speed Force Power-Ups (Mach 1 / Mach 10 / Mach 100 / Light Speed)"
+        ]
+      },
+      {
+        "name": "Cyborg",
+        "features": [
+          "Cybernetic Variant (Battery Powered, Infinite Stamina Engine, Artificial Limitation Remover)",
+          "Big-Gete Variant (Metal Wire Construction, Big Gete Star Cloning, Draining Grapple)",
+          "Neo-Mutant Variant (Liquid Metal Form, Shape Form, Superiority: Combat)"
+        ]
+      },
+      {
+        "name": "Hybrids",
+        "features": [
+          "Humanoid only: replace up to 3 features from another Humanoid race or Explosive Temper"
+        ]
+      },
+      {
+        "name": "Reincarnation (Optional)",
+        "features": [
+          "Replace up to 3 racial features with features from previous life"
+        ]
+      }
+    ],
+    "classes": [
+      {
+        "name": "Agent",
+        "hit_die": "1d10",
+        "ki_modifier": "+1",
+        "saving_throws": "Cha, Int",
+        "multiclass_req": "Int 15",
+        "starting_wealth": "(5d4 x 10) x 10,000 Zeni",
+        "features": [
+          "Close Quarters Combat",
+          "Unarmored Defense",
+          "Expertise",
+          "Gadgets",
+          "Fighting Style",
+          "Heroic Features",
+          "Extra Attack",
+          "Jack of All Trades",
+          "Battery Pack",
+          "Engineering",
+          "Empowered Gadgets",
+          "Reliable Talent",
+          "Quantum Battery"
+        ]
+      },
+      {
+        "name": "Blaster",
+        "hit_die": "1d8",
+        "ki_modifier": "+3",
+        "saving_throws": "Wis, Dex",
+        "multiclass_req": "Wis 15",
+        "starting_wealth": "(4d4 x 10) x 10,000 Zeni",
+        "features": [
+          "Ki Enhanced Abilities",
+          "Defensive Aura",
+          "Heroic Feature",
+          "Ki Reserve",
+          "Ki Blast Proficiency",
+          "Extra Attack",
+          "Signature Move",
+          "Attack Style",
+          "Ki Master"
+        ]
+      },
+      {
+        "name": "Bruiser",
+        "hit_die": "1d12",
+        "ki_modifier": "+1",
+        "saving_throws": "Str, Con",
+        "multiclass_req": "Str 15 & Con 15",
+        "starting_wealth": "(2d4 x 10) x 10,000 Zeni",
+        "features": [
+          "Crushing Strength",
+          "Unarmed Defense",
+          "Dragon Soul",
+          "Heroic Feature",
+          "Extra Attack",
+          "Block Breaker",
+          "Brutal Critical",
+          "Limit Breaker",
+          "Embodiment of Power"
+        ]
+      },
+      {
+        "name": "Elite",
+        "hit_die": "1d8",
+        "ki_modifier": "+2",
+        "saving_throws": "Dex, Int",
+        "multiclass_req": "Dex 15",
+        "starting_wealth": "(5d4 x 10) x 10,000 Zeni",
+        "features": [
+          "Critical Blow",
+          "Close Quarters Combat",
+          "Unarmored Defense",
+          "Expertise",
+          "Decisive Action",
+          "Heroic Feature",
+          "Extra Attack",
+          "Uncanny Dodge",
+          "Reliable Talent",
+          "Evasion",
+          "Elusive",
+          "Masterful Skill"
+        ]
+      },
+      {
+        "name": "Hero",
+        "hit_die": "1d8",
+        "ki_modifier": "+3",
+        "saving_throws": "Str, Con",
+        "multiclass_req": "Cha 15",
+        "starting_wealth": "(4d4 x 10) x 10,000 Zeni",
+        "features": [
+          "Bolster Allies",
+          "Heroic Strength",
+          "Ki Control",
+          "Heroic Inspiration",
+          "Secret Fighting Poses",
+          "Heroic Features",
+          "Extra Attack",
+          "Unifying Presence",
+          "Signature Move"
+        ]
+      },
+      {
+        "name": "Martial Artist",
+        "hit_die": "1d8",
+        "ki_modifier": "+2",
+        "saving_throws": "Cha, Dex",
+        "multiclass_req": "Dex 15 & Wis 15",
+        "starting_wealth": "5d4 x 10,000 Zeni",
+        "features": [
+          "Martial Arts",
+          "Unarmored Defense",
+          "Unarmored Movement",
+          "Combat Superiority (23 Maneuvers)",
+          "Heroic Features",
+          "Extra Attack",
+          "Know Your Enemy",
+          "Mind Over Matter",
+          "Superiority Improvement",
+          "Signature Move"
+        ]
+      },
+      {
+        "name": "Mystic",
+        "hit_die": "1d6",
+        "ki_modifier": "+3",
+        "saving_throws": "Wis, Int",
+        "multiclass_req": "Cha 15",
+        "starting_wealth": "(3d4 x 10) x 10,000 Zeni",
+        "features": [
+          "Mysticism",
+          "Mystical Aura",
+          "Martial Arts",
+          "Magyk Conversion",
+          "Heroic Feature",
+          "Magyk Power",
+          "Sparking",
+          "Signature Move"
+        ]
+      },
+      {
+        "name": "Prodigy",
+        "hit_die": "1d10",
+        "ki_modifier": "+2",
+        "saving_throws": "Str, Dex",
+        "multiclass_req": "Str 15 & Dex 15",
+        "starting_wealth": "(2d4 x 10) x 10,000 Zeni",
+        "features": [
+          "Inner Strength",
+          "Combat Potential",
+          "Combat Instincts",
+          "Targeted Assault",
+          "Heroic Features",
+          "Extra Attack",
+          "Adrenaline Spike",
+          "Overwhelming Might",
+          "Talent",
+          "Improved Criticals",
+          "Deep Reserves",
+          "Unleashed Abilities"
+        ]
+      },
+      {
+        "name": "Punisher",
+        "hit_die": "1d8",
+        "ki_modifier": "+1",
+        "saving_throws": "Cha, Con",
+        "multiclass_req": "Con 15 & Cha 15",
+        "starting_wealth": "(3d4 x 10) x 10,000 Zeni",
+        "features": [
+          "Crushing Strength",
+          "Unarmed Defense",
+          "Grit",
+          "Punishing Smite",
+          "Fighting Style",
+          "Heroic Feature",
+          "Extra Attack",
+          "Signature Move",
+          "Combat Proficiency",
+          "Empowered Smite",
+          "Unbridled Grit"
+        ]
+      },
+      {
+        "name": "Warrior",
+        "hit_die": "1d10",
+        "ki_modifier": "+2",
+        "saving_throws": "Str, Con",
+        "multiclass_req": "Str 15 & Dex 15",
+        "starting_wealth": "(4d4 x 10) x 10,000 Zeni",
+        "features": [
+          "Close Quarters Combat",
+          "Unarmored Defense",
+          "Second Wind",
+          "Fighting Style",
+          "Heroic Features",
+          "Extra Attack",
+          "Sparking!"
+        ]
+      }
+    ],
+    "forms": [
+      {
+        "name": "Super Earthling",
+        "family": "Earthling",
+        "type": "Rank 2 Power-Up",
+        "bonuses": "+1 Power, +5 ft Speed, 1 size larger carrying, 1 Stamina/turn"
+      },
+      {
+        "name": "Earthling Potential",
+        "family": "Earthling",
+        "type": "Rank 3 Power-Up",
+        "bonuses": "+2 Power, +10 ft Speed, 2 Stamina/turn"
+      },
+      {
+        "name": "Capacity Breaker",
+        "family": "Android",
+        "type": "Power-Up",
+        "bonuses": "+1 Power, +1d4 damage, +5 ft Speed, 1 Stamina/turn"
+      },
+      {
+        "name": "Overdrive",
+        "family": "Android",
+        "type": "Power-Up",
+        "bonuses": "+2 Power, +1d6 damage, +25 ft Speed, 3 Stamina/turn"
+      },
+      {
+        "name": "Super Android",
+        "family": "Android",
+        "type": "Godly Transformation",
+        "bonuses": "+4 Power, +2d6 damage, +40 ft Speed, +2 AC, 3 Stamina/turn"
+      },
+      {
+        "name": "Ultimate Android",
+        "family": "Android",
+        "type": "Godly Power-Up",
+        "bonuses": "+3 Power, +2d8 damage, +20 ft Speed, +1 AC, 3 Stamina/turn"
+      },
+      {
+        "name": "Second Form",
+        "family": "Arcosian - Gates of Power",
+        "type": "Transformation (Lvl 5)",
+        "bonuses": "+1 Power, +5 ft Speed, Empowered, 1 Stamina/turn"
+      },
+      {
+        "name": "Third Form",
+        "family": "Arcosian - Gates of Power",
+        "type": "Transformation (Lvl 10)",
+        "bonuses": "+2 Power, +10 ft Speed, Super-Charged, +30 ft Ki range, 2 Stamina/turn"
+      },
+      {
+        "name": "Fourth Form",
+        "family": "Arcosian - Gates of Power",
+        "type": "Transformation (Lvl 15)",
+        "bonuses": "+3 Power, +1d6 damage, +25 ft Speed, +2x Prof bonus dmg on fail by 10+, 3 Stamina/turn"
+      },
+      {
+        "name": "100% Power Fourth Form",
+        "family": "Arcosian - Gates of Power",
+        "type": "Transformation (Lvl 15)",
+        "bonuses": "+3 Power, +1d10 damage, +25 ft Speed, +2 Bulk, 4 Stamina/turn"
+      },
+      {
+        "name": "Fifth Form",
+        "family": "Arcosian - Gates of Power",
+        "type": "Transformation (Rank 4)",
+        "bonuses": "+4 Power, +2d6 damage, +30 ft Speed, Empowered, +1 AC, 4 Stamina/turn"
+      },
+      {
+        "name": "Golden Form",
+        "family": "Arcosian - Royal",
+        "type": "Power-Up",
+        "bonuses": "+3 Power, +1d8 damage, +30 ft Speed, +2 AC, 3 Stamina/turn"
+      },
+      {
+        "name": "Obsidian Form",
+        "family": "Arcosian - Royal",
+        "type": "Power-Up",
+        "bonuses": "+4 Power, +1d10 damage, +45 ft Speed, +3 AC, 6 Stam activate / 5 Stam/turn"
+      },
+      {
+        "name": "Super Namekian",
+        "family": "Namekian",
+        "type": "Transformation/Power-Up",
+        "bonuses": "+1 Power & +5 ft Speed per fused Namekian (max Prof), 3 Stamina/turn (6 as Power-Up)"
+      },
+      {
+        "name": "Titan Namekian",
+        "family": "Namekian",
+        "type": "Power-Up",
+        "bonuses": "Large (Lvl 5), Huge (Lvl 10), Gargantuan (Lvl 20); +1 Bulk & +1 Power per size grown; 2 Stam/turn per size"
+      },
+      {
+        "name": "Namekian Split",
+        "family": "Namekian",
+        "type": "Power-Up (Rank 2)",
+        "bonuses": "Create clones up to assimilated Namekians (max half Prof rounded up), 2 Stam/turn per split"
+      },
+      {
+        "name": "Orange Namekian",
+        "family": "Namekian",
+        "type": "Godly Transformation",
+        "bonuses": "+4 Power, +2d6 damage, +40 ft Speed, +1 Bulk, 4 Stamina/turn"
+      },
+      {
+        "name": "Red-Eyed Namekian",
+        "family": "Namekian",
+        "type": "Godly Power-Up",
+        "bonuses": "+3 Power, +1d12 damage, +30 ft Speed, +2 AC, 3 Stamina/turn"
+      },
+      {
+        "name": "Great Ape",
+        "family": "Saiyan - Oozaru",
+        "type": "Power-Up",
+        "bonuses": "+2 Power, Max HP as Temp HP, +4 Bulk, Huge, 2d8 unarmed/ki blast, AC 15+Con+half Prof, 1 hour"
+      },
+      {
+        "name": "Oozaru's Fury",
+        "family": "Saiyan - Oozaru",
+        "type": "Power-Up",
+        "bonuses": "+1 step unarmed/melee dmg die, +1 Bulk, Empowered, 3 Stamina/turn"
+      },
+      {
+        "name": "Wrath of the Saiyans",
+        "family": "Saiyan - Oozaru",
+        "type": "Power-Up",
+        "bonuses": "+2 Power, +1d6 damage, +2 steps unarmed/melee dmg die, +2 Bulk, 5 Stamina/turn"
+      },
+      {
+        "name": "Super Saiyan 4",
+        "family": "Saiyan - Oozaru & Super Saiyan",
+        "type": "Transformation",
+        "bonuses": "+3 Power, +1d8 damage, Empowered, +30 ft Speed, +4 Str/Dex & Max, 4 Stamina/turn"
+      },
+      {
+        "name": "Super Saiyan 1",
+        "family": "Saiyan - Super Saiyan",
+        "type": "Transformation",
+        "bonuses": "+1 Power, +1d4 damage, +10 ft Speed, 1 Stamina/turn"
+      },
+      {
+        "name": "Super Saiyan 2",
+        "family": "Saiyan - Super Saiyan",
+        "type": "Transformation",
+        "bonuses": "+2 Power, +1d6 damage, +20 ft Speed, 2 Stamina/turn"
+      },
+      {
+        "name": "Super Saiyan 3",
+        "family": "Saiyan - Super Saiyan",
+        "type": "Transformation",
+        "bonuses": "+3 Power, +1d8 damage, +35 ft Speed, 3 Stamina/turn"
+      },
+      {
+        "name": "Super Saiyan Grade 2 / 3 / 4",
+        "family": "Saiyan - Super Saiyan Grades",
+        "type": "Power-Up",
+        "bonuses": "G2: +1 Pwr, +1d4 dmg, -10 Spd, +1 Bulk, 1 Stam | G3: +1 Pwr, +1d6 dmg, -20 Spd, +2 Bulk, 2 Stam | G4: +2 Pwr, 1 Stam, no slot"
+      },
+      {
+        "name": "Berserker Super Saiyan 1 / 2 / 3",
+        "family": "Mutant Saiyan",
+        "type": "Transformation",
+        "bonuses": "SS1: +2 Pwr, +1d6, +20 Spd, +1 AC, +1 Bulk, 2 Stam | SS2: +3 Pwr, +1d8, +30 Spd, +2 AC, +2 Bulk, 3 Stam | SS3: +3 Pwr, +1d10, +30 Spd, +2 AC, +2 Bulk, 4 Stam"
+      },
+      {
+        "name": "Controlled Super Saiyan 1 / 2 / 3 & Full Power SSJ",
+        "family": "Mutant Saiyan",
+        "type": "Transformation",
+        "bonuses": "CSS1: +2 Pwr, +1d4, +15 Spd, 2 Stam | CSS2: +3 Pwr, +1d6, +25 Spd, +1 Bulk, 3 Stam | CSS3: +3 Pwr, +1d8, +25 Spd, +2 Bulk, 4 Stam | FPSSJ: +4 Pwr, +1d8, +30 Spd, +2 AC, +2 Bulk, 5 Stam"
+      },
+      {
+        "name": "Ancient Saiyan Forms",
+        "family": "Ancient Saiyan",
+        "type": "Power-Ups & Transformations",
+        "bonuses": "Burst of Potential (+1 Pwr, +10 Spd, 1 Stam), Draw from S-cells (+5 Spd, +2 dmg, 1 Stam), Timeless Power (+2 Pwr, +15 Spd, +1d4 dmg, 2 Stam), Pure SSJ (+1 Pwr, +10 Spd, +1d6 dmg, 2 Stam), Legendary SSJ (+Ki Rank Pwr, +25 Spd, +1d6 dmg, 3 Stam), SSJ3 Full Power (+4 Pwr, +1d10 dmg, +20 Spd, 5 Stam)"
+      },
+      {
+        "name": "Super Saiyan God & Evolution",
+        "family": "Saiyan God",
+        "type": "Power-Up",
+        "bonuses": "SSG: +3 Pwr, +30 Spd, +1d12 dmg, +2 AC, 3 Stam | SSGE: +3 Pwr, +30 Spd, +3d6 dmg, +2 AC, +2 Bulk, 5 Stam"
+      },
+      {
+        "name": "Red Eye Activation / Focus / Double Red Eye",
+        "family": "Ceralian",
+        "type": "Power-Up / Transformation",
+        "bonuses": "Activation: +2 Pwr, +25% range, 2 Stam | Focus: +3 Pwr, +50% range, +1 crit, 3 Stam | Double (Transf): +5 Pwr, 2x range, +2 crit, 5 Stam"
+      },
+      {
+        "name": "Purification",
+        "family": "Majin",
+        "type": "Power-Up (Lvl 10)",
+        "bonuses": "+2 Power, +1d6 damage, Cha mod for Techniques & bonus dmg, gain Berserk"
+      },
+      {
+        "name": "Mashin-jin Forms",
+        "family": "Mashin-jin",
+        "type": "Power-Ups & Transformations",
+        "bonuses": "Dark Energy (+2 Pwr, 1 Stam), Flowing Dark Energy (+3 Pwr, +2d4 dmg, 2 Stam), Demon God's Mantle (+3 Pwr, +15 Spd, +1 Spell/Ki Pwr, BA spells, 3 Stam), Demon Form (+3 Pwr, +2 Bulk, Empowered, 3 Stam), Makyouka Form (Godly: +4 Pwr, +30 Spd, +4 Str/Cha & Max, +1 die step, Super-Charged, 5 Stam)"
+      },
+      {
+        "name": "Kaio-Ken (Base to x1000)",
+        "family": "Non-Race Specific",
+        "type": "Power-Up",
+        "bonuses": "Base (+1 Pwr, +10 Spd, 1 HP) up to x1000 (+5 Pwr, +40 Spd, +1d10 dmg, Super-Charged, 10 HP/round)"
+      },
+      {
+        "name": "Full Power / Super Full Power",
+        "family": "Non-Race Specific",
+        "type": "Transformation",
+        "bonuses": "FP (Rank 3): +2 Pwr, +1 AC, +1 Bulk, 3 Stam | SFP (Rank 4): +3 Pwr, +2 AC, +2 Bulk, 4 Stam"
+      },
+      {
+        "name": "Potential Unlock (Tiers 1-4)",
+        "family": "Non-Race Specific",
+        "type": "Transformation/Power-Up",
+        "bonuses": "T1 (+1 Pwr, +10 Spd, 1 Stam), T2 (+2 Pwr, +20 Spd, 2 Stam), T3 Ultimate (+3 Pwr, +20 Spd, +1 die step, 3 Stam), T4 Beast Godly (+5 Pwr, +45 Spd, +2 die steps, 5 Stam)"
+      },
+      {
+        "name": "Majin Mark / Deep Control",
+        "family": "Non-Race Specific",
+        "type": "Power-Up",
+        "bonuses": "Mark: +1 Pwr, +10 Spd, +2 Stam start of turn | Deep Control: +2 Pwr, +20 Spd, +3 Stam start of turn"
+      },
+      {
+        "name": "No-Ego",
+        "family": "Non-Race Specific",
+        "type": "Power-Up",
+        "bonuses": "Reduce technique Ki cost by Ki Rank, immune to Berserk, -1 step Charge casting time, 2 Stamina/turn"
+      },
+      {
+        "name": "Pure Progress",
+        "family": "Non-Race Specific",
+        "type": "Power-Up",
+        "bonuses": "+1 Power at start of turn (max half Prof), match enemy damage die, +5 Spd per Power, Ki Rank Stamina/turn"
+      },
+      {
+        "name": "Dark Energy",
+        "family": "Non-Race Specific",
+        "type": "Power-Up",
+        "bonuses": "+3 Power, +30 ft Speed, +1d8 damage, 3 Stamina/turn (blocks SSG)"
+      },
+      {
+        "name": "Ultra Instinct (Omen / Complete / True)",
+        "family": "Non-Race Specific",
+        "type": "Godly Transformation",
+        "bonuses": "Omen: +4 Pwr, +2d4, +30 Spd, +3 AC, +1 reaction, 4 Stam | Complete: +4 Pwr, +2d8, +60 Spd, +4 AC, +1 reaction, 6 Stam | True: +5 Pwr, +2d10, +90 Spd, +4 AC, +2 reactions, 6 Stam"
+      },
+      {
+        "name": "Ultra Ego (Omen / Complete / Burning)",
+        "family": "Non-Race Specific",
+        "type": "Godly Transformation",
+        "bonuses": "Omen: +4 Pwr, +2d4, +20 Spd, +1d8 Destruction pool/turn, 2 Stam | Complete: +4 Pwr, +2d6, +40 Spd, +2d4 pool, 3 Stam | Burning: +5 Pwr, +2d8, +60 Spd, +4 AC, +2d6 pool, 4 Stam"
+      }
+    ],
+    "techniques": {
+      "melee_rank_1": [
+        "All Out!",
+        "Charge!",
+        "Crane Strike",
+        "Dempsey Roll",
+        "Dynamite Strike",
+        "Flurry of Blows",
+        "Hammer Fist",
+        "Hurricane Kick",
+        "Ki Empowered Strikes",
+        "Lightning Jab",
+        "Power Strike",
+        "Rush!",
+        "The Ol' One-Two",
+        "Wolf Fang Fist"
+      ],
+      "melee_rank_2": [
+        "Amazing Impact",
+        "Angry Hit",
+        "Aura Lariot",
+        "Blitz",
+        "Burning Rush",
+        "Crusher Blow",
+        "Deadly Dance",
+        "Dragon Throw",
+        "Evil Whirlwind",
+        "Four Witches Technique",
+        "Meteor Strike",
+        "Surpass Your Limits!"
+      ],
+      "melee_rank_3": [
+        "All Clear",
+        "Arm Break",
+        "Blinding Wolf Fang Fist",
+        "Breakstorm",
+        "Death Crasher",
+        "Destructive Rampage",
+        "Drill Kick",
+        "Erupting Meteor Fist",
+        "Evil Typhoon",
+        "Gigantic Rage",
+        "God Fist",
+        "Piercing Punch",
+        "Power Rush",
+        "Pressure Sign",
+        "Shockwave Strike",
+        "Thunder Flash"
+      ],
+      "melee_rank_4": [
+        "Armor Break",
+        "Blitz Rush",
+        "Elite Combo",
+        "Explosion Fist",
+        "Perfect Combo",
+        "Soaring Dragon Strike",
+        "Super Dragon Fist"
+      ],
+      "weapon_rank_1": [
+        "Bonk!",
+        "Flurry",
+        "Iai!",
+        "I'll Shoot You!",
+        "Pincushion",
+        "Shining Slash",
+        "Staggering Clash",
+        "Whirlwind"
+      ],
+      "weapon_rank_2": [
+        "Brave Slash",
+        "Cyclone",
+        "Deadly Strike",
+        "Finishing Blow",
+        "Flurry Assault",
+        "Focus",
+        "Ravenous Claw",
+        "Shining Attack",
+        "Skirmish",
+        "Tear Them Down",
+        "Vulcan Cannon"
+      ],
+      "weapon_rank_3": [
+        "Brave Flurry",
+        "Brave Weapon Attack",
+        "Confusion Weapon",
+        "Darkness Flurry Attack",
+        "Evil Spear",
+        "Full Charge Shot",
+        "Rakshasa Claw"
+      ],
+      "weapon_rank_4": [
+        "Dimensional Flurry Attack",
+        "Divine Shot",
+        "Time Breaker: Black Hole",
+        "Weapon of Hope"
+      ],
+      "ki_rank_1": [
+        "Dodon Ray",
+        "Consecutive Blasts",
+        "Explosive Wave",
+        "Fient Shot",
+        "Kamekameha",
+        "Kiai!",
+        "Ki Blast Barrage",
+        "Ki Blast Cannon",
+        "Ki Blast Missle",
+        "Max Power Energy Wave",
+        "Psycho Barrier",
+        "Rapid Fire!",
+        "Skyline Blast"
+      ],
+      "ki_rank_2": [
+        "Aura Shield",
+        "Burning Attack",
+        "Continuous Energy Bullet",
+        "Dark Kamehameha",
+        "Death Beam",
+        "Destructo Disk",
+        "Fissure Slash",
+        "Furious Demon Barrage",
+        "Galick Gun",
+        "Kamehameha",
+        "Ki-Blade",
+        "Light Grenade",
+        "Masenko",
+        "Missle Barrage",
+        "Riot Javelin",
+        "Scatter Shot",
+        "Solar Flare",
+        "Super Explosive Wave"
+      ],
+      "ki_rank_3": [
+        "100x Solar Flare",
+        "Angry Shout",
+        "Big Bang Attack",
+        "Black Kamehameha",
+        "Blaster Meteor",
+        "Death Ball",
+        "Death Saucer",
+        "Destructo Disk Barrage",
+        "DIE DIE Missle Barrage",
+        "Final Flash",
+        "Galactic Donuts",
+        "Hellzone Grenade",
+        "Improved Ki-Blade",
+        "Infinity Bullet",
+        "Instant Galick Gun",
+        "Instant Kamehameha",
+        "Majin Kamehameha",
+        "Massive Explosive Wave",
+        "Mouth Cannon",
+        "Paralysis Shocker",
+        "Perfect Energy Wave",
+        "Special Beam Cannon",
+        "Super Destructo Disk",
+        "Super Galick Gun",
+        "Super Ghost Guardians",
+        "Super Ghost Kamikazi Attack",
+        "Super Kamehameha",
+        "Tribeam",
+        "Twin Cannon",
+        "Warp Kamehameha"
+      ],
+      "ki_rank_4": [
+        "Big Bang Final Flash",
+        "Big Bang Grenade",
+        "Big Bang Kamehameha",
+        "Burning Storm",
+        "Dark Impact",
+        "Destructive Cannon",
+        "Emperor's Barrage",
+        "Final Kamehameha",
+        "Full Power Kamehameha",
+        "Galick Kamehameha",
+        "Hyper Special Beam Cannon",
+        "Ki Split",
+        "Omega Blaster",
+        "Spirit Sword",
+        "Super Ghost Kamikaze Guardians",
+        "Stardust Breaker",
+        "Supernova",
+        "Ultimate Galick Gun",
+        "Ultimate Ghost Kamikaze Attack",
+        "Ultimate Ghost Guardians"
+      ],
+      "other_ki": [
+        "Afterimage",
+        "Charge",
+        "Full Power Charge",
+        "Kamehame HAHA",
+        "Ki-Dash",
+        "Ki Empowerment",
+        "Maximum Charge",
+        "Meteor Combo",
+        "Minimum Charge",
+        "Multi-Form Blast",
+        "Parapara Dance",
+        "Power Up",
+        "Spirit Bomb",
+        "Spirit Buster",
+        "Z-Combo"
+      ],
+      "stances": [
+        "Turtle Style",
+        "Crane Style",
+        "Wolf Style",
+        "Demon Style",
+        "Saiyan Style",
+        "Emperor Style",
+        "Future Style",
+        "Magic Style"
+      ]
+    }
+  }
+}
